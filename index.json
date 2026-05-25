@@ -1,0 +1,82 @@
+﻿{
+    "repo":  {
+                 "id":  "official",
+                 "name":  "ROMs Official Registry",
+                 "lastUpdated":  "2026-05-25T16:28:34Z",
+                 "maintainer":  "Maintainer",
+                 "schemaVersion":  "1.1.0",
+                 "url_template":  ""
+             },
+    "packages":  [
+                     {
+                         "name":  "autofirewall",
+                         "version":  "0.5.1",
+                         "description":  "Automates Windows Firewall policy creation by scanning a directory for .exe files and blocking their network access.",
+                         "author":  "rrkroms",
+                         "filename":  "autofirewall-0.5.1.rms",
+                         "sha256":  "02EDE2F584A564E5EFDF71AB98444DF821D859A9AA005F1F62AE7636A0AC6A77",
+                         "size":  4605,
+                         "downloadUrl":  "https://github.com/ROMs-util/autofirewall/releases/download/v0.5.1/autofirewall-0.5.1.rms",
+                         "architecture":  "all",
+                         "dependencies":  {
+                                              "system":  {
+                                                             "os":  "Windows 10 / 11",
+                                                             "powershell":  "5.1",
+                                                             "privileges":  "Administrator"
+                                                         }
+                                          }
+                     },
+                     {
+                         "name":  "autofirewall",
+                         "version":  "0.5.1",
+                         "description":  "Automates Windows Firewall policy creation by scanning a directory for .exe files and blocking their network access.",
+                         "author":  "rrkroms",
+                         "filename":  "autofirewall_x64-0.5.1.rms",
+                         "sha256":  "01FBBD5EF3F2312AA8E0E65ECE2CBB576367554F4E55DF1822EBE63C4C844916",
+                         "size":  4630,
+                         "downloadUrl":  "https://github.com/ROMs-util/autofirewall/releases/download/v0.5.1/autofirewall_x64-0.5.1.rms",
+                         "architecture":  "x64",
+                         "dependencies":  {
+                                              "system":  {
+                                                             "os":  "Windows 10 / 11",
+                                                             "powershell":  "5.1",
+                                                             "privileges":  "Administrator"
+                                                         }
+                                          }
+                     },
+                     {
+                         "name":  "autofirewall",
+                         "version":  "0.5.1",
+                         "description":  "Automates Windows Firewall policy creation by scanning a directory for .exe files and blocking their network access.",
+                         "author":  "rrkroms",
+                         "filename":  "autofirewall_x86_64-0.5.1.rms",
+                         "sha256":  "8FE976D3549890C87B4D2057B3A8CA713F358B5082924A3AB95729D254BB37FE",
+                         "size":  4630,
+                         "downloadUrl":  "https://github.com/ROMs-util/autofirewall/releases/download/v0.5.1/autofirewall_x86_64-0.5.1.rms",
+                         "architecture":  "x86",
+                         "dependencies":  {
+                                              "system":  {
+                                                             "os":  "Windows 10 / 11",
+                                                             "powershell":  "5.1",
+                                                             "privileges":  "Administrator"
+                                                         }
+                                          }
+                     },
+                     {
+                         "name":  "rmspkg",
+                         "version":  "alpha",
+                         "description":  "The ROMs-util Standalone Package Engine",
+                         "author":  "rrkroms",
+                         "filename":  "rmspkg-alpha.rms",
+                         "sha256":  "3A8DBABD8F14D75E8074EF4794359B75050C4E75C20DD7C368A4FFAFD1547B3D",
+                         "size":  9640,
+                         "downloadUrl":  "https://github.com/ROMs-util/rmspkg/releases/download/latest/rmspkg-alpha.rms",
+                         "architecture":  "all",
+                         "dependencies":  {
+                                              "packages":  [
+
+                                                           ]
+                                          }
+                     }
+                 ]
+}
