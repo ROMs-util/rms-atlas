@@ -2,7 +2,7 @@
     "repo":  {
                  "id":  "official",
                  "name":  "ROMs Official Registry",
-                 "lastUpdated":  "2026-05-25T16:28:34Z",
+                 "lastUpdated":  "2026-05-25T17:07:56Z",
                  "maintainer":  "Maintainer",
                  "schemaVersion":  "1.1.0",
                  "url_template":  ""
@@ -68,8 +68,8 @@
                          "description":  "The ROMs-util Standalone Package Engine",
                          "author":  "rrkroms",
                          "filename":  "rmspkg-alpha.rms",
-                         "sha256":  "3A8DBABD8F14D75E8074EF4794359B75050C4E75C20DD7C368A4FFAFD1547B3D",
-                         "size":  9640,
+                         "sha256":  "7C90E3EB7D9CF99F7951ECB48D7E1B920ED96225210CFB1D7B191AB7181332D3",
+                         "size":  9628,
                          "downloadUrl":  "https://github.com/ROMs-util/rmspkg/releases/download/latest/rmspkg-alpha.rms",
                          "architecture":  "all",
                          "dependencies":  {
