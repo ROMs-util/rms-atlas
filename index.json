@@ -1,11 +1,11 @@
 {
   "repo": {
-    "maintainer": "Maintainer",
-    "name": "ROMs Official Registry",
-    "lastUpdated": "2026-05-27T04:32:54Z",
     "id": "official",
+    "maintainer": "Maintainer",
+    "schemaVersion": "1.1.0",
     "url_template": "https://github.com/ROMs-util/roms-testnet/releases/download/latest/<filename>",
-    "schemaVersion": "1.1.0"
+    "lastUpdated": "2026-05-27T04:48:56Z",
+    "name": "ROMs Official Registry"
   },
   "packages": [
     {
@@ -115,8 +115,8 @@
       "filename": "state-breaker-1.0.0.rms",
       "description": "Lab: Intentionally fails during post-install (Tests Transactional Rollback)",
       "author": "ROMs-util Lab",
-      "sha256": "87CABF01797D9A0EDEC6E54B1FD6AFF9EF8511FDDCB534B3E6B593A437EDB3A1",
-      "size": 766,
+      "sha256": "7A97505C7E45C763396605027287C9DF22F9D39070233A68B7FB8FB5DB0A5B9E",
+      "size": 788,
       "dependencies": [],
       "downloadUrl": ""
     }
