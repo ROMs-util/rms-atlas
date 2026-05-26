@@ -1,11 +1,11 @@
 {
   "repo": {
-    "url_template": "",
-    "schemaVersion": "1.1.0",
-    "id": "official",
+    "url_template": "https://github.com/ROMs-util/roms-testnet/releases/download/latest/<filename>",
     "maintainer": "Maintainer",
-    "lastUpdated": "2026-05-27T04:17:27Z",
-    "name": "ROMs Official Registry"
+    "id": "official",
+    "lastUpdated": "2026-05-27T04:22:49Z",
+    "name": "ROMs Official Registry",
+    "schemaVersion": "1.1.0"
   },
   "packages": [
     {
