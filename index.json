@@ -1,11 +1,11 @@
 {
   "repo": {
-    "maintainer": "Maintainer",
     "url_template": "https://github.com/ROMs-util/roms-testnet/releases/download/latest/<filename>",
+    "schemaVersion": "1.1.0",
     "name": "ROMs Official Registry",
-    "lastUpdated": "2026-05-27T06:58:58Z",
-    "id": "official",
-    "schemaVersion": "1.1.0"
+    "lastUpdated": "2026-05-27T07:05:42Z",
+    "maintainer": "Maintainer",
+    "id": "official"
   },
   "packages": [
     {
@@ -17,6 +17,7 @@
       "author": "ROMs-util Lab",
       "sha256": "7A25EDA89D295482A2A029AF6812378DA0EE243DA5A9C539758AC1BE04E69AE3",
       "size": 558,
+      "priority": 100,
       "dependencies": [
         "chain-b"
       ],
@@ -31,6 +32,7 @@
       "author": "ROMs-util Lab",
       "sha256": "548275B3983A87C3F895D45C1E374DD70486370FE3A6C4524A0C165F602B46DE",
       "size": 539,
+      "priority": 100,
       "dependencies": [
         "chain-c"
       ],
@@ -45,6 +47,7 @@
       "author": "ROMs-util Lab",
       "sha256": "36297ED321B11983C113ADA657AA5AF3B5F7940F9AEEC4BC3C5645EB25774069",
       "size": 522,
+      "priority": 100,
       "dependencies": [],
       "downloadUrl": ""
     },
@@ -57,6 +60,7 @@
       "author": "ROMs-util Lab",
       "sha256": "13D566093370286670AA7F31943ECBB196A04C69A03FC01ED989441FDDBA95C6",
       "size": 613,
+      "priority": 100,
       "dependencies": [],
       "downloadUrl": ""
     },
@@ -69,6 +73,7 @@
       "author": "ROMs-util Lab",
       "sha256": "5D5FD322CC6C61C959DFFFC6F5A7D9F6DB5C3D124B96F99B30DB29EBA1A8886F",
       "size": 1531,
+      "priority": 100,
       "dependencies": [],
       "downloadUrl": ""
     },
@@ -81,6 +86,7 @@
       "author": "ROMs-util Lab",
       "sha256": "1A761B5D48AB9C75506AECEBE1A677184FD5D94792AB6C57619D2EA975C87085",
       "size": 1443,
+      "priority": 100,
       "dependencies": [],
       "downloadUrl": ""
     },
@@ -93,6 +99,7 @@
       "author": "ROMs-util Lab",
       "sha256": "5AA99FF8F1EF99F6CAF050AF17BFC3788EF693F3D5149E4DF5B13101E7DC4D5E",
       "size": 509,
+      "priority": 100,
       "dependencies": [],
       "downloadUrl": ""
     },
@@ -105,6 +112,7 @@
       "author": "ROMs-util Lab",
       "sha256": "7E9B21E8FDB45BE4B9883247E81E5A038171A839EA4C2C903F13C8AE1206FB80",
       "size": 512,
+      "priority": 100,
       "dependencies": [],
       "downloadUrl": ""
     },
@@ -117,6 +125,7 @@
       "author": "ROMs-util Lab",
       "sha256": "2DE2DD40E81168C7AF1A15A61CFB2D9890F49115C7EC55008DC34C7175896C61",
       "size": 693,
+      "priority": 100,
       "dependencies": [],
       "downloadUrl": ""
     },
@@ -129,6 +138,7 @@
       "author": "ROMs-util Lab",
       "sha256": "F6879E09DE0E992337C8340DAB82D77D5F12C2751D639082C959CF26BB7DCC70",
       "size": 705,
+      "priority": 200,
       "dependencies": [],
       "downloadUrl": ""
     },
@@ -141,6 +151,7 @@
       "author": "ROMs-util Lab",
       "sha256": "7A97505C7E45C763396605027287C9DF22F9D39070233A68B7FB8FB5DB0A5B9E",
       "size": 788,
+      "priority": 100,
       "dependencies": [],
       "downloadUrl": ""
     }
