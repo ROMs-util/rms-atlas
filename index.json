@@ -1,10 +1,10 @@
 {
   "repo": {
-    "name": "ROMs Official Registry",
-    "id": "official",
-    "url_template": "https://github.com/ROMs-util/roms-testnet/releases/download/latest/<filename>",
-    "lastUpdated": "2026-05-27T06:48:26Z",
     "maintainer": "Maintainer",
+    "url_template": "https://github.com/ROMs-util/roms-testnet/releases/download/latest/<filename>",
+    "name": "ROMs Official Registry",
+    "lastUpdated": "2026-05-27T06:58:58Z",
+    "id": "official",
     "schemaVersion": "1.1.0"
   },
   "packages": [
@@ -115,8 +115,8 @@
       "filename": "priority-base-1.0.0.rms",
       "description": "Lab: Base provider for 'lab-priority' (Priority 100)",
       "author": "ROMs-util Lab",
-      "sha256": "63B30CCE401F9D4C2CFB9B4F5FB1E367A666AEFA58246F7F9E8A613D87D0AF86",
-      "size": 498,
+      "sha256": "2DE2DD40E81168C7AF1A15A61CFB2D9890F49115C7EC55008DC34C7175896C61",
+      "size": 693,
       "dependencies": [],
       "downloadUrl": ""
     },
@@ -127,8 +127,8 @@
       "filename": "priority-max-1.0.0.rms",
       "description": "Lab: High-priority provider for 'lab-priority' (Priority 200)",
       "author": "ROMs-util Lab",
-      "sha256": "EC99AEA6B72775EA43FE59339EDB628A58971F04617772E6FBB39C6E9DFD0041",
-      "size": 510,
+      "sha256": "F6879E09DE0E992337C8340DAB82D77D5F12C2751D639082C959CF26BB7DCC70",
+      "size": 705,
       "dependencies": [],
       "downloadUrl": ""
     },
