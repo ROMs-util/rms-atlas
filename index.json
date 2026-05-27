@@ -1,11 +1,11 @@
 {
   "repo": {
+    "id": "official",
     "url_template": "https://github.com/ROMs-util/roms-testnet/releases/download/latest/<filename>",
-    "schemaVersion": "1.1.0",
+    "lastUpdated": "2026-05-27T21:46:16Z",
     "name": "ROMs Official Registry",
-    "lastUpdated": "2026-05-27T07:05:42Z",
     "maintainer": "Maintainer",
-    "id": "official"
+    "schemaVersion": "1.1.0"
   },
   "packages": [
     {
@@ -60,6 +60,58 @@
       "author": "ROMs-util Lab",
       "sha256": "13D566093370286670AA7F31943ECBB196A04C69A03FC01ED989441FDDBA95C6",
       "size": 613,
+      "priority": 100,
+      "dependencies": [],
+      "downloadUrl": ""
+    },
+    {
+      "name": "helper",
+      "version": "1.0.0",
+      "architecture": "all",
+      "filename": "helper-1.0.0.rms",
+      "description": "Synthetic helper for version testing (v1.0.0)",
+      "author": "ROMs-util Lab",
+      "sha256": "53810BFB4C12F1B33EC2D1576F38EFF84653E1CEC205898259E9159BD8A17CB1",
+      "size": 566,
+      "priority": 100,
+      "dependencies": [],
+      "downloadUrl": ""
+    },
+    {
+      "name": "helper",
+      "version": "1.1.0",
+      "architecture": "all",
+      "filename": "helper-1.1.0.rms",
+      "description": "Synthetic helper for version testing (v1.1.0)",
+      "author": "ROMs-util Lab",
+      "sha256": "8755DFB36862545DB85609D1FD6A6C9BFF668B77A6A6679BBCBFA70F3B5650B0",
+      "size": 565,
+      "priority": 100,
+      "dependencies": [],
+      "downloadUrl": ""
+    },
+    {
+      "name": "helper",
+      "version": "1.2.0-beta",
+      "architecture": "all",
+      "filename": "helper-1.2.0-beta.rms",
+      "description": "Synthetic helper for version testing (v1.2.0-beta)",
+      "author": "ROMs-util Lab",
+      "sha256": "F7AB01535855F6A9455AE638FEFD562F952A50871B4AC141ADF045B020D3B92A",
+      "size": 575,
+      "priority": 100,
+      "dependencies": [],
+      "downloadUrl": ""
+    },
+    {
+      "name": "helper",
+      "version": "2.0.0",
+      "architecture": "all",
+      "filename": "helper-2.0.0.rms",
+      "description": "Synthetic helper for version testing (v2.0.0)",
+      "author": "ROMs-util Lab",
+      "sha256": "023FC0CBBBA5376FEB38D970144FB63A26898B2AC08AF65615FCED4A6CE718A1",
+      "size": 566,
       "priority": 100,
       "dependencies": [],
       "downloadUrl": ""
@@ -153,6 +205,66 @@
       "size": 788,
       "priority": 100,
       "dependencies": [],
+      "downloadUrl": ""
+    },
+    {
+      "name": "ver-caret",
+      "version": "1.0.0",
+      "architecture": "all",
+      "filename": "ver-caret-1.0.0.rms",
+      "description": "Tests caret constraint ^1.0.0 (Should pick helper v1.1.0)",
+      "author": "ROMs-util Lab",
+      "sha256": "54D59215629D218180D93F89F8ABA3BF70EE38E0840305DB524623F0A06B9C73",
+      "size": 593,
+      "priority": 100,
+      "dependencies": [
+        "helper:^1.0.0"
+      ],
+      "downloadUrl": ""
+    },
+    {
+      "name": "ver-pre",
+      "version": "1.0.0",
+      "architecture": "all",
+      "filename": "ver-pre-1.0.0.rms",
+      "description": "Tests pre-release constraint ^1.2.0-alpha (Should pick helper v1.2.0-beta)",
+      "author": "ROMs-util Lab",
+      "sha256": "67AE4EB54FD00C4E6420BD021A40B3FB124CC35F79C9BF63338BCE4056B18118",
+      "size": 598,
+      "priority": 100,
+      "dependencies": [
+        "helper:^1.2.0-alpha"
+      ],
+      "downloadUrl": ""
+    },
+    {
+      "name": "ver-range",
+      "version": "1.0.0",
+      "architecture": "all",
+      "filename": "ver-range-1.0.0.rms",
+      "description": "Tests range constraint >=1.1.0 (Should pick helper v1.1.0)",
+      "author": "ROMs-util Lab",
+      "sha256": "4D913917D61AEA4D8489A7E5743B361051618FCC57A247589B2E448B3F909CD9",
+      "size": 598,
+      "priority": 100,
+      "dependencies": [
+        "helper:>=1.1.0"
+      ],
+      "downloadUrl": ""
+    },
+    {
+      "name": "ver-tilde",
+      "version": "1.0.0",
+      "architecture": "all",
+      "filename": "ver-tilde-1.0.0.rms",
+      "description": "Tests tilde constraint ~1.0.0 (Should pick helper v1.0.0)",
+      "author": "ROMs-util Lab",
+      "sha256": "13F84D55605328F2F55DE86D5CA8AA8FF2659DCCC53AC4D3567CE108ACD1FDAC",
+      "size": 593,
+      "priority": 100,
+      "dependencies": [
+        "helper:~1.0.0"
+      ],
       "downloadUrl": ""
     }
   ]
