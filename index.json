@@ -1,11 +1,11 @@
 {
   "repo": {
-    "id": "official",
+    "schemaVersion": "1.1.0",
+    "lastUpdated": "2026-05-28T00:54:26Z",
     "url_template": "https://github.com/ROMs-util/roms-testnet/releases/download/latest/<filename>",
-    "lastUpdated": "2026-05-27T21:46:16Z",
-    "name": "ROMs Official Registry",
     "maintainer": "Maintainer",
-    "schemaVersion": "1.1.0"
+    "id": "official",
+    "name": "ROMs Official Registry"
   },
   "packages": [
     {
@@ -214,7 +214,7 @@
       "filename": "ver-caret-1.0.0.rms",
       "description": "Tests caret constraint ^1.0.0 (Should pick helper v1.1.0)",
       "author": "ROMs-util Lab",
-      "sha256": "54D59215629D218180D93F89F8ABA3BF70EE38E0840305DB524623F0A06B9C73",
+      "sha256": "317AFD33AB54595E54FDAE7832B935068B7CEC7FD4B7E7350AD8F5945E3316CD",
       "size": 593,
       "priority": 100,
       "dependencies": [
