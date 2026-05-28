@@ -1,11 +1,11 @@
 {
   "repo": {
-    "schemaVersion": "1.1.0",
-    "lastUpdated": "2026-05-28T00:54:26Z",
-    "url_template": "https://github.com/ROMs-util/roms-testnet/releases/download/latest/<filename>",
-    "maintainer": "Maintainer",
     "id": "official",
-    "name": "ROMs Official Registry"
+    "maintainer": "Maintainer",
+    "name": "ROMs Official Registry",
+    "schemaVersion": "1.1.0",
+    "url_template": "https://github.com/ROMs-util/roms-testnet/releases/download/latest/<filename>",
+    "lastUpdated": "2026-05-28T14:51:23Z"
   },
   "packages": [
     {
@@ -62,6 +62,21 @@
       "size": 613,
       "priority": 100,
       "dependencies": [],
+      "downloadUrl": ""
+    },
+    {
+      "name": "fail-chain",
+      "version": "1.0.0",
+      "architecture": "all",
+      "filename": "fail-chain-1.0.0.rms",
+      "description": "Lab: Fails after installing dependencies (Tests Manager Rollback)",
+      "author": "ROMs-util Lab",
+      "sha256": "21F030E5C000D1B5977080E9F689498115065979A6D623534A7C61BD43C5ED99",
+      "size": 687,
+      "priority": 100,
+      "dependencies": [
+        "helper"
+      ],
       "downloadUrl": ""
     },
     {
