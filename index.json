@@ -2,7 +2,7 @@
     "repo":  {
                  "id":  "official",
                  "name":  "ROMs Official Registry",
-                 "lastUpdated":  "2026-05-31T16:10:53Z",
+                 "lastUpdated":  "2026-06-01T00:11:00Z",
                  "maintainer":  "Maintainer",
                  "schemaVersion":  "1.1.0",
                  "url_template":  ""
@@ -63,6 +63,23 @@
                                                              "powershell":  "5.1",
                                                              "privileges":  "Administrator"
                                                          }
+                                          }
+                     },
+                     {
+                         "name":  "roms",
+                         "version":  "0.9.0-alpha",
+                         "description":  "The ROMs-util High-level Package Manager",
+                         "author":  "rrkroms",
+                         "filename":  "roms-0.9.0-alpha.rms",
+                         "sha256":  "70B66A6F0BA64E34061E7797460061B30AEE1744CAF3495581E108BD731D41CB",
+                         "size":  22738,
+                         "priority":  100,
+                         "downloadUrl":  "https://github.com/ROMs-util/roms/releases/download/v0.9.0-alpha/roms-0.9.0-alpha.rms",
+                         "architecture":  "all",
+                         "dependencies":  {
+                                              "packages":  [
+                                                               "rmspkg:0.1.0-alpha"
+                                                           ]
                                           }
                      },
                      {
