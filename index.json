@@ -2,7 +2,7 @@
     "repo":  {
                  "id":  "official",
                  "name":  "ROMs Official Registry",
-                 "lastUpdated":  "2026-06-01T02:31:18Z",
+                 "lastUpdated":  "2026-06-01T02:41:36Z",
                  "maintainer":  "Maintainer",
                  "schemaVersion":  "1.1.0",
                  "url_template":  ""
@@ -305,6 +305,25 @@
                          "dependencies":  [
                                               "helper:~1.0.0"
                                           ]
+                     },
+                     {
+                         "name":  "autofirewall",
+                         "version":  "0.1.0-alpha",
+                         "description":  "Automates Windows Firewall policy creation by scanning a directory for .exe files and blocking their network access.",
+                         "author":  "rrkroms",
+                         "filename":  "autofirewall-v0.1.0-alpha.rms",
+                         "sha256":  "9C8C28DF2944DFB6E532B77116A3B509F3F2A2CB6320B5A67DBEDEA85084950A",
+                         "size":  4598,
+                         "priority":  100,
+                         "downloadUrl":  "https://github.com/rrkroms/autofirewall/releases/download/v0.1.0-alpha/autofirewall-v0.1.0-alpha.rms",
+                         "architecture":  "all",
+                         "dependencies":  {
+                                              "system":  {
+                                                             "os":  "Windows 10 / 11",
+                                                             "powershell":  "5.1",
+                                                             "privileges":  "Administrator"
+                                                         }
+                                          }
                      },
                      {
                          "name":  "roms",
