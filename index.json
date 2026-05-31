@@ -1,286 +1,401 @@
-{
-  "repo": {
-    "maintainer": "Maintainer",
-    "schemaVersion": "1.1.0",
-    "name": "ROMs Official Registry",
-    "id": "official",
-    "lastUpdated": "2026-05-28T15:44:33Z",
-    "url_template": "https://github.com/ROMs-util/roms-testnet/releases/download/latest/<filename>"
-  },
-  "packages": [
-    {
-      "name": "chain-a",
-      "version": "1.0.0",
-      "architecture": "all",
-      "filename": "chain-a-1.0.0.rms",
-      "description": "Lab: Root of a 3-level dependency chain (Tests Recursive Resolver)",
-      "author": "ROMs-util Lab",
-      "sha256": "7A25EDA89D295482A2A029AF6812378DA0EE243DA5A9C539758AC1BE04E69AE3",
-      "size": 558,
-      "priority": 100,
-      "dependencies": [
-        "chain-b"
-      ],
-      "downloadUrl": ""
-    },
-    {
-      "name": "chain-b",
-      "version": "1.0.0",
-      "architecture": "all",
-      "filename": "chain-b-1.0.0.rms",
-      "description": "Lab: Middle of a 3-level dependency chain",
-      "author": "ROMs-util Lab",
-      "sha256": "548275B3983A87C3F895D45C1E374DD70486370FE3A6C4524A0C165F602B46DE",
-      "size": 539,
-      "priority": 100,
-      "dependencies": [
-        "chain-c"
-      ],
-      "downloadUrl": ""
-    },
-    {
-      "name": "chain-c",
-      "version": "1.0.0",
-      "architecture": "all",
-      "filename": "chain-c-1.0.0.rms",
-      "description": "Lab: Leaf of a 3-level dependency chain",
-      "author": "ROMs-util Lab",
-      "sha256": "36297ED321B11983C113ADA657AA5AF3B5F7940F9AEEC4BC3C5645EB25774069",
-      "size": 522,
-      "priority": 100,
-      "dependencies": [],
-      "downloadUrl": ""
-    },
-    {
-      "name": "env-pro",
-      "version": "1.0.0",
-      "architecture": "all",
-      "filename": "env-pro-1.0.0.rms",
-      "description": "Lab: Modifies environment variables (Tests Cleanup & Persistence)",
-      "author": "ROMs-util Lab",
-      "sha256": "13D566093370286670AA7F31943ECBB196A04C69A03FC01ED989441FDDBA95C6",
-      "size": 613,
-      "priority": 100,
-      "dependencies": [],
-      "downloadUrl": ""
-    },
-    {
-      "name": "fail-chain",
-      "version": "1.0.0",
-      "architecture": "all",
-      "filename": "fail-chain-1.0.0.rms",
-      "description": "Lab: Fails after installing dependencies (Tests Manager Rollback)",
-      "author": "ROMs-util Lab",
-      "sha256": "21F030E5C000D1B5977080E9F689498115065979A6D623534A7C61BD43C5ED99",
-      "size": 687,
-      "priority": 100,
-      "dependencies": [
-        "helper"
-      ],
-      "downloadUrl": ""
-    },
-    {
-      "name": "helper",
-      "version": "1.0.0",
-      "architecture": "all",
-      "filename": "helper-1.0.0.rms",
-      "description": "Synthetic helper for version testing (v1.0.0)",
-      "author": "ROMs-util Lab",
-      "sha256": "53810BFB4C12F1B33EC2D1576F38EFF84653E1CEC205898259E9159BD8A17CB1",
-      "size": 566,
-      "priority": 100,
-      "dependencies": [],
-      "downloadUrl": ""
-    },
-    {
-      "name": "helper",
-      "version": "1.1.0",
-      "architecture": "all",
-      "filename": "helper-1.1.0.rms",
-      "description": "Synthetic helper for version testing (v1.1.0)",
-      "author": "ROMs-util Lab",
-      "sha256": "8755DFB36862545DB85609D1FD6A6C9BFF668B77A6A6679BBCBFA70F3B5650B0",
-      "size": 565,
-      "priority": 100,
-      "dependencies": [],
-      "downloadUrl": ""
-    },
-    {
-      "name": "helper",
-      "version": "1.2.0-beta",
-      "architecture": "all",
-      "filename": "helper-1.2.0-beta.rms",
-      "description": "Synthetic helper for version testing (v1.2.0-beta)",
-      "author": "ROMs-util Lab",
-      "sha256": "F7AB01535855F6A9455AE638FEFD562F952A50871B4AC141ADF045B020D3B92A",
-      "size": 575,
-      "priority": 100,
-      "dependencies": [],
-      "downloadUrl": ""
-    },
-    {
-      "name": "helper",
-      "version": "2.0.0",
-      "architecture": "all",
-      "filename": "helper-2.0.0.rms",
-      "description": "Synthetic helper for version testing (v2.0.0)",
-      "author": "ROMs-util Lab",
-      "sha256": "023FC0CBBBA5376FEB38D970144FB63A26898B2AC08AF65615FCED4A6CE718A1",
-      "size": 566,
-      "priority": 100,
-      "dependencies": [],
-      "downloadUrl": ""
-    },
-    {
-      "name": "hook-deep",
-      "version": "1.0.0",
-      "architecture": "all",
-      "filename": "hook-deep-1.0.0.rms",
-      "description": "Lab: Tests hooks in subdirectories (Preserves Relative Pathing)",
-      "author": "ROMs-util Lab",
-      "sha256": "5D5FD322CC6C61C959DFFFC6F5A7D9F6DB5C3D124B96F99B30DB29EBA1A8886F",
-      "size": 1531,
-      "priority": 100,
-      "dependencies": [],
-      "downloadUrl": ""
-    },
-    {
-      "name": "hook-manifest",
-      "version": "1.0.0",
-      "architecture": "all",
-      "filename": "hook-manifest-1.0.0.rms",
-      "description": "Lab: Tests all 4 lifecycle hooks via explicit manifest mapping",
-      "author": "ROMs-util Lab",
-      "sha256": "1A761B5D48AB9C75506AECEBE1A677184FD5D94792AB6C57619D2EA975C87085",
-      "size": 1443,
-      "priority": 100,
-      "dependencies": [],
-      "downloadUrl": ""
-    },
-    {
-      "name": "pivot-v1",
-      "version": "1.0.0",
-      "architecture": "all",
-      "filename": "pivot-v1-1.0.0.rms",
-      "description": "Lab: Provider 1 for 'lab-pivot' (Tests Alternatives & Auto-Pivot)",
-      "author": "ROMs-util Lab",
-      "sha256": "5AA99FF8F1EF99F6CAF050AF17BFC3788EF693F3D5149E4DF5B13101E7DC4D5E",
-      "size": 509,
-      "priority": 100,
-      "dependencies": [],
-      "downloadUrl": ""
-    },
-    {
-      "name": "pivot-v2",
-      "version": "1.0.0",
-      "architecture": "all",
-      "filename": "pivot-v2-1.0.0.rms",
-      "description": "Lab: Provider 2 for 'lab-pivot' (Tests Alternatives & Manual Select)",
-      "author": "ROMs-util Lab",
-      "sha256": "7E9B21E8FDB45BE4B9883247E81E5A038171A839EA4C2C903F13C8AE1206FB80",
-      "size": 512,
-      "priority": 100,
-      "dependencies": [],
-      "downloadUrl": ""
-    },
-    {
-      "name": "priority-base",
-      "version": "1.0.0",
-      "architecture": "all",
-      "filename": "priority-base-1.0.0.rms",
-      "description": "Lab: Base provider for 'lab-priority' (Priority 100)",
-      "author": "ROMs-util Lab",
-      "sha256": "2DE2DD40E81168C7AF1A15A61CFB2D9890F49115C7EC55008DC34C7175896C61",
-      "size": 693,
-      "priority": 100,
-      "dependencies": [],
-      "downloadUrl": ""
-    },
-    {
-      "name": "priority-max",
-      "version": "1.0.0",
-      "architecture": "all",
-      "filename": "priority-max-1.0.0.rms",
-      "description": "Lab: High-priority provider for 'lab-priority' (Priority 200)",
-      "author": "ROMs-util Lab",
-      "sha256": "F6879E09DE0E992337C8340DAB82D77D5F12C2751D639082C959CF26BB7DCC70",
-      "size": 705,
-      "priority": 200,
-      "dependencies": [],
-      "downloadUrl": ""
-    },
-    {
-      "name": "state-breaker",
-      "version": "1.0.0",
-      "architecture": "all",
-      "filename": "state-breaker-1.0.0.rms",
-      "description": "Lab: Intentionally fails during post-install (Tests Transactional Rollback)",
-      "author": "ROMs-util Lab",
-      "sha256": "7A97505C7E45C763396605027287C9DF22F9D39070233A68B7FB8FB5DB0A5B9E",
-      "size": 788,
-      "priority": 100,
-      "dependencies": [],
-      "downloadUrl": ""
-    },
-    {
-      "name": "ver-caret",
-      "version": "1.0.0",
-      "architecture": "all",
-      "filename": "ver-caret-1.0.0.rms",
-      "description": "Tests caret constraint ^1.0.0 (Should pick helper v1.1.0)",
-      "author": "ROMs-util Lab",
-      "sha256": "317AFD33AB54595E54FDAE7832B935068B7CEC7FD4B7E7350AD8F5945E3316CD",
-      "size": 593,
-      "priority": 100,
-      "dependencies": [
-        "helper:^1.0.0"
-      ],
-      "downloadUrl": ""
-    },
-    {
-      "name": "ver-pre",
-      "version": "1.0.0",
-      "architecture": "all",
-      "filename": "ver-pre-1.0.0.rms",
-      "description": "Tests pre-release constraint ^1.2.0-alpha (Should pick helper v1.2.0-beta)",
-      "author": "ROMs-util Lab",
-      "sha256": "67AE4EB54FD00C4E6420BD021A40B3FB124CC35F79C9BF63338BCE4056B18118",
-      "size": 598,
-      "priority": 100,
-      "dependencies": [
-        "helper:^1.2.0-alpha"
-      ],
-      "downloadUrl": ""
-    },
-    {
-      "name": "ver-range",
-      "version": "1.0.0",
-      "architecture": "all",
-      "filename": "ver-range-1.0.0.rms",
-      "description": "Tests range constraint >=1.1.0 (Should pick helper v1.1.0)",
-      "author": "ROMs-util Lab",
-      "sha256": "4D913917D61AEA4D8489A7E5743B361051618FCC57A247589B2E448B3F909CD9",
-      "size": 598,
-      "priority": 100,
-      "dependencies": [
-        "helper:>=1.1.0"
-      ],
-      "downloadUrl": ""
-    },
-    {
-      "name": "ver-tilde",
-      "version": "1.0.0",
-      "architecture": "all",
-      "filename": "ver-tilde-1.0.0.rms",
-      "description": "Tests tilde constraint ~1.0.0 (Should pick helper v1.0.0)",
-      "author": "ROMs-util Lab",
-      "sha256": "13F84D55605328F2F55DE86D5CA8AA8FF2659DCCC53AC4D3567CE108ACD1FDAC",
-      "size": 593,
-      "priority": 100,
-      "dependencies": [
-        "helper:~1.0.0"
-      ],
-      "downloadUrl": ""
-    }
-  ]
+﻿{
+    "repo":  {
+                 "id":  "official",
+                 "name":  "ROMs Official Registry",
+                 "lastUpdated":  "2026-05-31T16:10:53Z",
+                 "maintainer":  "Maintainer",
+                 "schemaVersion":  "1.1.0",
+                 "url_template":  ""
+             },
+    "packages":  [
+                     {
+                         "name":  "autofirewall",
+                         "version":  "0.5.1",
+                         "description":  "Automates Windows Firewall policy creation by scanning a directory for .exe files and blocking their network access.",
+                         "author":  "rrkroms",
+                         "filename":  "autofirewall-0.5.1.rms",
+                         "sha256":  "02EDE2F584A564E5EFDF71AB98444DF821D859A9AA005F1F62AE7636A0AC6A77",
+                         "size":  4605,
+                         "priority":  100,
+                         "downloadUrl":  "https://github.com/ROMs-util/autofirewall/releases/download/v0.5.1/autofirewall-0.5.1.rms",
+                         "architecture":  "all",
+                         "dependencies":  {
+                                              "system":  {
+                                                             "os":  "Windows 10 / 11",
+                                                             "powershell":  "5.1",
+                                                             "privileges":  "Administrator"
+                                                         }
+                                          }
+                     },
+                     {
+                         "name":  "autofirewall",
+                         "version":  "0.5.1",
+                         "description":  "Automates Windows Firewall policy creation by scanning a directory for .exe files and blocking their network access.",
+                         "author":  "rrkroms",
+                         "filename":  "autofirewall_x64-0.5.1.rms",
+                         "sha256":  "01FBBD5EF3F2312AA8E0E65ECE2CBB576367554F4E55DF1822EBE63C4C844916",
+                         "size":  4630,
+                         "priority":  100,
+                         "downloadUrl":  "https://github.com/ROMs-util/autofirewall/releases/download/v0.5.1/autofirewall_x64-0.5.1.rms",
+                         "architecture":  "x64",
+                         "dependencies":  {
+                                              "system":  {
+                                                             "os":  "Windows 10 / 11",
+                                                             "powershell":  "5.1",
+                                                             "privileges":  "Administrator"
+                                                         }
+                                          }
+                     },
+                     {
+                         "name":  "autofirewall",
+                         "version":  "0.5.1",
+                         "description":  "Automates Windows Firewall policy creation by scanning a directory for .exe files and blocking their network access.",
+                         "author":  "rrkroms",
+                         "filename":  "autofirewall_x86_64-0.5.1.rms",
+                         "sha256":  "8FE976D3549890C87B4D2057B3A8CA713F358B5082924A3AB95729D254BB37FE",
+                         "size":  4630,
+                         "priority":  100,
+                         "downloadUrl":  "https://github.com/ROMs-util/autofirewall/releases/download/v0.5.1/autofirewall_x86_64-0.5.1.rms",
+                         "architecture":  "x86",
+                         "dependencies":  {
+                                              "system":  {
+                                                             "os":  "Windows 10 / 11",
+                                                             "powershell":  "5.1",
+                                                             "privileges":  "Administrator"
+                                                         }
+                                          }
+                     },
+                     {
+                         "name":  "chain-a",
+                         "version":  "1.0.0",
+                         "description":  "Lab: Root of a 3-level dependency chain (Tests Recursive Resolver)",
+                         "author":  "ROMs-util Lab",
+                         "filename":  "chain-a-1.0.0.rms",
+                         "sha256":  "7A25EDA89D295482A2A029AF6812378DA0EE243DA5A9C539758AC1BE04E69AE3",
+                         "size":  558,
+                         "priority":  100,
+                         "downloadUrl":  "https://github.com/ROMs-util/roms-testnet/releases/download/latest/chain-a-1.0.0.rms",
+                         "architecture":  "all",
+                         "dependencies":  {
+                                              "packages":  [
+                                                               "chain-b"
+                                                           ]
+                                          }
+                     },
+                     {
+                         "name":  "chain-b",
+                         "version":  "1.0.0",
+                         "description":  "Lab: Middle of a 3-level dependency chain",
+                         "author":  "ROMs-util Lab",
+                         "filename":  "chain-b-1.0.0.rms",
+                         "sha256":  "548275B3983A87C3F895D45C1E374DD70486370FE3A6C4524A0C165F602B46DE",
+                         "size":  539,
+                         "priority":  100,
+                         "downloadUrl":  "https://github.com/ROMs-util/roms-testnet/releases/download/latest/chain-b-1.0.0.rms",
+                         "architecture":  "all",
+                         "dependencies":  {
+                                              "packages":  [
+                                                               "chain-c"
+                                                           ]
+                                          }
+                     },
+                     {
+                         "name":  "chain-c",
+                         "version":  "1.0.0",
+                         "description":  "Lab: Leaf of a 3-level dependency chain",
+                         "author":  "ROMs-util Lab",
+                         "filename":  "chain-c-1.0.0.rms",
+                         "sha256":  "36297ED321B11983C113ADA657AA5AF3B5F7940F9AEEC4BC3C5645EB25774069",
+                         "size":  522,
+                         "priority":  100,
+                         "downloadUrl":  "https://github.com/ROMs-util/roms-testnet/releases/download/latest/chain-c-1.0.0.rms",
+                         "architecture":  "all",
+                         "dependencies":  {
+
+                                          }
+                     },
+                     {
+                         "name":  "env-pro",
+                         "version":  "1.0.0",
+                         "description":  "Lab: Modifies environment variables (Tests Cleanup \u0026 Persistence)",
+                         "author":  "ROMs-util Lab",
+                         "filename":  "env-pro-1.0.0.rms",
+                         "sha256":  "13D566093370286670AA7F31943ECBB196A04C69A03FC01ED989441FDDBA95C6",
+                         "size":  613,
+                         "priority":  100,
+                         "downloadUrl":  "https://github.com/ROMs-util/roms-testnet/releases/download/latest/env-pro-1.0.0.rms",
+                         "architecture":  "all",
+                         "dependencies":  {
+
+                                          }
+                     },
+                     {
+                         "name":  "fail-chain",
+                         "version":  "1.0.0",
+                         "description":  "Lab: Fails after installing dependencies (Tests Manager Rollback)",
+                         "author":  "ROMs-util Lab",
+                         "filename":  "fail-chain-1.0.0.rms",
+                         "sha256":  "21F030E5C000D1B5977080E9F689498115065979A6D623534A7C61BD43C5ED99",
+                         "size":  687,
+                         "priority":  100,
+                         "downloadUrl":  "https://github.com/ROMs-util/roms-testnet/releases/download/latest/fail-chain-1.0.0.rms",
+                         "architecture":  "all",
+                         "dependencies":  {
+                                              "packages":  [
+                                                               "helper"
+                                                           ]
+                                          }
+                     },
+                     {
+                         "name":  "helper",
+                         "version":  "1.0.0",
+                         "description":  "Synthetic helper for version testing (v1.0.0)",
+                         "author":  "ROMs-util Lab",
+                         "filename":  "helper-1.0.0.rms",
+                         "sha256":  "53810BFB4C12F1B33EC2D1576F38EFF84653E1CEC205898259E9159BD8A17CB1",
+                         "size":  566,
+                         "priority":  100,
+                         "downloadUrl":  "https://github.com/ROMs-util/roms-testnet/releases/download/latest/helper-1.0.0.rms",
+                         "architecture":  "all",
+                         "dependencies":  null
+                     },
+                     {
+                         "name":  "helper",
+                         "version":  "1.1.0",
+                         "description":  "Synthetic helper for version testing (v1.1.0)",
+                         "author":  "ROMs-util Lab",
+                         "filename":  "helper-1.1.0.rms",
+                         "sha256":  "8755DFB36862545DB85609D1FD6A6C9BFF668B77A6A6679BBCBFA70F3B5650B0",
+                         "size":  565,
+                         "priority":  100,
+                         "downloadUrl":  "https://github.com/ROMs-util/roms-testnet/releases/download/latest/helper-1.1.0.rms",
+                         "architecture":  "all",
+                         "dependencies":  null
+                     },
+                     {
+                         "name":  "helper",
+                         "version":  "1.2.0-beta",
+                         "description":  "Synthetic helper for version testing (v1.2.0-beta)",
+                         "author":  "ROMs-util Lab",
+                         "filename":  "helper-1.2.0-beta.rms",
+                         "sha256":  "F7AB01535855F6A9455AE638FEFD562F952A50871B4AC141ADF045B020D3B92A",
+                         "size":  575,
+                         "priority":  100,
+                         "downloadUrl":  "https://github.com/ROMs-util/roms-testnet/releases/download/latest/helper-1.2.0-beta.rms",
+                         "architecture":  "all",
+                         "dependencies":  null
+                     },
+                     {
+                         "name":  "helper",
+                         "version":  "2.0.0",
+                         "description":  "Synthetic helper for version testing (v2.0.0)",
+                         "author":  "ROMs-util Lab",
+                         "filename":  "helper-2.0.0.rms",
+                         "sha256":  "023FC0CBBBA5376FEB38D970144FB63A26898B2AC08AF65615FCED4A6CE718A1",
+                         "size":  566,
+                         "priority":  100,
+                         "downloadUrl":  "https://github.com/ROMs-util/roms-testnet/releases/download/latest/helper-2.0.0.rms",
+                         "architecture":  "all",
+                         "dependencies":  null
+                     },
+                     {
+                         "name":  "hook-deep",
+                         "version":  "1.0.0",
+                         "description":  "Lab: Tests hooks in subdirectories (Preserves Relative Pathing)",
+                         "author":  "ROMs-util Lab",
+                         "filename":  "hook-deep-1.0.0.rms",
+                         "sha256":  "5D5FD322CC6C61C959DFFFC6F5A7D9F6DB5C3D124B96F99B30DB29EBA1A8886F",
+                         "size":  1531,
+                         "priority":  100,
+                         "downloadUrl":  "https://github.com/ROMs-util/roms-testnet/releases/download/latest/hook-deep-1.0.0.rms",
+                         "architecture":  "all",
+                         "dependencies":  {
+
+                                          }
+                     },
+                     {
+                         "name":  "hook-manifest",
+                         "version":  "1.0.0",
+                         "description":  "Lab: Tests all 4 lifecycle hooks via explicit manifest mapping",
+                         "author":  "ROMs-util Lab",
+                         "filename":  "hook-manifest-1.0.0.rms",
+                         "sha256":  "1A761B5D48AB9C75506AECEBE1A677184FD5D94792AB6C57619D2EA975C87085",
+                         "size":  1443,
+                         "priority":  100,
+                         "downloadUrl":  "https://github.com/ROMs-util/roms-testnet/releases/download/latest/hook-manifest-1.0.0.rms",
+                         "architecture":  "all",
+                         "dependencies":  {
+
+                                          }
+                     },
+                     {
+                         "name":  "pivot-v1",
+                         "version":  "1.0.0",
+                         "description":  "Lab: Provider 1 for \u0027lab-pivot\u0027 (Tests Alternatives \u0026 Auto-Pivot)",
+                         "author":  "ROMs-util Lab",
+                         "filename":  "pivot-v1-1.0.0.rms",
+                         "sha256":  "5AA99FF8F1EF99F6CAF050AF17BFC3788EF693F3D5149E4DF5B13101E7DC4D5E",
+                         "size":  509,
+                         "priority":  100,
+                         "downloadUrl":  "https://github.com/ROMs-util/roms-testnet/releases/download/latest/pivot-v1-1.0.0.rms",
+                         "architecture":  "all",
+                         "dependencies":  {
+
+                                          }
+                     },
+                     {
+                         "name":  "pivot-v2",
+                         "version":  "1.0.0",
+                         "description":  "Lab: Provider 2 for \u0027lab-pivot\u0027 (Tests Alternatives \u0026 Manual Select)",
+                         "author":  "ROMs-util Lab",
+                         "filename":  "pivot-v2-1.0.0.rms",
+                         "sha256":  "7E9B21E8FDB45BE4B9883247E81E5A038171A839EA4C2C903F13C8AE1206FB80",
+                         "size":  512,
+                         "priority":  100,
+                         "downloadUrl":  "https://github.com/ROMs-util/roms-testnet/releases/download/latest/pivot-v2-1.0.0.rms",
+                         "architecture":  "all",
+                         "dependencies":  {
+
+                                          }
+                     },
+                     {
+                         "name":  "priority-base",
+                         "version":  "1.0.0",
+                         "description":  "Lab: Base provider for \u0027lab-priority\u0027 (Priority 100)",
+                         "author":  "ROMs-util Lab",
+                         "filename":  "priority-base-1.0.0.rms",
+                         "sha256":  "2DE2DD40E81168C7AF1A15A61CFB2D9890F49115C7EC55008DC34C7175896C61",
+                         "size":  693,
+                         "priority":  100,
+                         "downloadUrl":  "https://github.com/ROMs-util/roms-testnet/releases/download/latest/priority-base-1.0.0.rms",
+                         "architecture":  "all",
+                         "dependencies":  {
+
+                                          }
+                     },
+                     {
+                         "name":  "priority-max",
+                         "version":  "1.0.0",
+                         "description":  "Lab: High-priority provider for \u0027lab-priority\u0027 (Priority 200)",
+                         "author":  "ROMs-util Lab",
+                         "filename":  "priority-max-1.0.0.rms",
+                         "sha256":  "F6879E09DE0E992337C8340DAB82D77D5F12C2751D639082C959CF26BB7DCC70",
+                         "size":  705,
+                         "priority":  200,
+                         "downloadUrl":  "https://github.com/ROMs-util/roms-testnet/releases/download/latest/priority-max-1.0.0.rms",
+                         "architecture":  "all",
+                         "dependencies":  {
+
+                                          }
+                     },
+                     {
+                         "name":  "state-breaker",
+                         "version":  "1.0.0",
+                         "description":  "Lab: Intentionally fails during post-install (Tests Transactional Rollback)",
+                         "author":  "ROMs-util Lab",
+                         "filename":  "state-breaker-1.0.0.rms",
+                         "sha256":  "7A97505C7E45C763396605027287C9DF22F9D39070233A68B7FB8FB5DB0A5B9E",
+                         "size":  788,
+                         "priority":  100,
+                         "downloadUrl":  "https://github.com/ROMs-util/roms-testnet/releases/download/latest/state-breaker-1.0.0.rms",
+                         "architecture":  "all",
+                         "dependencies":  {
+
+                                          }
+                     },
+                     {
+                         "name":  "ver-caret",
+                         "version":  "1.0.0",
+                         "description":  "Tests caret constraint ^1.0.0 (Should pick helper v1.1.0)",
+                         "author":  "ROMs-util Lab",
+                         "filename":  "ver-caret-1.0.0.rms",
+                         "sha256":  "317AFD33AB54595E54FDAE7832B935068B7CEC7FD4B7E7350AD8F5945E3316CD",
+                         "size":  593,
+                         "priority":  100,
+                         "downloadUrl":  "https://github.com/ROMs-util/roms-testnet/releases/download/latest/ver-caret-1.0.0.rms",
+                         "architecture":  "all",
+                         "dependencies":  [
+                                              "helper:^1.0.0"
+                                          ]
+                     },
+                     {
+                         "name":  "ver-pre",
+                         "version":  "1.0.0",
+                         "description":  "Tests pre-release constraint ^1.2.0-alpha (Should pick helper v1.2.0-beta)",
+                         "author":  "ROMs-util Lab",
+                         "filename":  "ver-pre-1.0.0.rms",
+                         "sha256":  "67AE4EB54FD00C4E6420BD021A40B3FB124CC35F79C9BF63338BCE4056B18118",
+                         "size":  598,
+                         "priority":  100,
+                         "downloadUrl":  "https://github.com/ROMs-util/roms-testnet/releases/download/latest/ver-pre-1.0.0.rms",
+                         "architecture":  "all",
+                         "dependencies":  [
+                                              "helper:^1.2.0-alpha"
+                                          ]
+                     },
+                     {
+                         "name":  "ver-range",
+                         "version":  "1.0.0",
+                         "description":  "Tests range constraint >=1.1.0 (Should pick helper v1.1.0)",
+                         "author":  "ROMs-util Lab",
+                         "filename":  "ver-range-1.0.0.rms",
+                         "sha256":  "4D913917D61AEA4D8489A7E5743B361051618FCC57A247589B2E448B3F909CD9",
+                         "size":  598,
+                         "priority":  100,
+                         "downloadUrl":  "https://github.com/ROMs-util/roms-testnet/releases/download/latest/ver-range-1.0.0.rms",
+                         "architecture":  "all",
+                         "dependencies":  [
+                                              "helper:>=1.1.0"
+                                          ]
+                     },
+                     {
+                         "name":  "ver-tilde",
+                         "version":  "1.0.0",
+                         "description":  "Tests tilde constraint ~1.0.0 (Should pick helper v1.0.0)",
+                         "author":  "ROMs-util Lab",
+                         "filename":  "ver-tilde-1.0.0.rms",
+                         "sha256":  "13F84D55605328F2F55DE86D5CA8AA8FF2659DCCC53AC4D3567CE108ACD1FDAC",
+                         "size":  593,
+                         "priority":  100,
+                         "downloadUrl":  "https://github.com/ROMs-util/roms-testnet/releases/download/latest/ver-tilde-1.0.0.rms",
+                         "architecture":  "all",
+                         "dependencies":  [
+                                              "helper:~1.0.0"
+                                          ]
+                     },
+                     {
+                         "name":  "rmspkg",
+                         "version":  "v0.1.0-alpha",
+                         "description":  "The ROMs-util Standalone Package Engine",
+                         "author":  "rrkroms",
+                         "filename":  "rmspkg-v0.1.0-alpha.rms",
+                         "sha256":  "2E08FB362F01B1793E270F14430B812A26DB23310211C8DE07D5B9C9E268EBCA",
+                         "size":  12825,
+                         "priority":  100,
+                         "downloadUrl":  "https://github.com/ROMs-util/rmspkg/releases/download/v0.1.0-alpha/rmspkg-v0.1.0-alpha.rms",
+                         "architecture":  "all",
+                         "dependencies":  {
+                                              "packages":  [
+
+                                                           ]
+                                          }
+                     },
+                     {
+                         "name":  "rmspkg",
+                         "version":  "alpha",
+                         "description":  "The ROMs-util Standalone Package Engine",
+                         "author":  "rrkroms",
+                         "filename":  "rmspkg-alpha.rms",
+                         "sha256":  "B44D4F80E2CB5982DDDEC461E916CC06E59B647D314E4D7F4FCC226F9EA5F91A",
+                         "size":  10061,
+                         "priority":  100,
+                         "downloadUrl":  "https://github.com/ROMs-util/rmspkg/releases/download/latest/rmspkg-alpha.rms",
+                         "architecture":  "all",
+                         "dependencies":  {
+                                              "packages":  [
+
+                                                           ]
+                                          }
+                     }
+                 ]
 }
