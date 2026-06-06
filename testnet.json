@@ -1,96 +1,107 @@
-﻿{
-    "repo":  {
-                 "id":  "official",
-                 "name":  "ROMs Official Registry",
-                 "channel":  "testnet",
-                 "lastUpdated":  "2026-06-02T22:58:00Z",
-                 "maintainer":  "Maintainer",
-                 "schemaVersion":  "1.1.1",
-                 "url_template":  ""
-             },
-    "packages":  [
-                     {
-                         "name":  "helper",
-                         "version":  "1.2.0-beta",
-                         "description":  "Synthetic helper for version testing (v1.2.0-beta)",
-                         "author":  "ROMs-util Lab",
-                         "filename":  "helper-1.2.0-beta.rms",
-                         "sha256":  "14E96C2FD82C42CBD9E46D1622EF04B1EBA488D393E30DE336090EBC04F09224",
-                         "size":  594,
-                         "priority":  100,
-                         "downloadUrl":  "https://github.com/ROMs-util/roms-testnet/releases/download/latest/helper-1.2.0-beta.rms",
-                         "architecture":  "all",
-                         "dependencies":  null
-                     },
-                     {
-                         "name":  "autofirewall",
-                         "version":  "0.1.0-alpha",
-                         "description":  "Automates Windows Firewall policy creation by scanning a directory for .exe files and blocking their network access.",
-                         "author":  "rrkroms",
-                         "filename":  "autofirewall-v0.1.0-alpha.rms",
-                         "sha256":  "9C8C28DF2944DFB6E532B77116A3B509F3F2A2CB6320B5A67DBEDEA85084950A",
-                         "size":  4598,
-                         "priority":  100,
-                         "downloadUrl":  "https://github.com/rrkroms/autofirewall/releases/download/v0.1.0-alpha/autofirewall-v0.1.0-alpha.rms",
-                         "architecture":  "all",
-                         "dependencies":  {
-                                              "system":  {
-                                                             "os":  "Windows 10 / 11",
-                                                             "powershell":  "5.1",
-                                                             "privileges":  "Administrator"
-                                                         }
-                                          }
-                     },
-                     {
-                         "name":  "roms",
-                         "version":  "0.9.0-alpha",
-                         "description":  "The ROMs-util High-level Package Manager",
-                         "author":  "rrkroms",
-                         "filename":  "roms-v0.9.0-alpha.rms",
-                         "sha256":  "92D239B83965F28C6C088E3B05727187F2F961343DBB3EDE6F0E6D5602E7F8AB",
-                         "size":  24040,
-                         "priority":  100,
-                         "downloadUrl":  "https://github.com/ROMs-util/roms/releases/download/v0.9.0-alpha/roms-v0.9.0-alpha.rms",
-                         "architecture":  "all",
-                         "dependencies":  {
-                                              "packages":  [
-                                                               "rmspkg:0.1.0-alpha"
-                                                           ]
-                                          }
-                     },
-                     {
-                         "name":  "rmspkg",
-                         "version":  "0.1.0-alpha",
-                         "description":  "The ROMs-util Standalone Package Engine",
-                         "author":  "rrkroms",
-                         "filename":  "rmspkg-v0.1.0-alpha.rms",
-                         "sha256":  "C25EF1E3332ABD3452110245EF1C63B991EC215BCB4180CF812543DD0FF345D3",
-                         "size":  14199,
-                         "priority":  100,
-                         "downloadUrl":  "https://github.com/ROMs-util/rmspkg/releases/download/v0.1.0-alpha/rmspkg-v0.1.0-alpha.rms",
-                         "architecture":  "all",
-                         "dependencies":  {
-                                              "packages":  [
-                                                               "roms:0.9.0-alpha"
-                                                           ]
-                                          }
-                     },
-                     {
-                         "name":  "rmspkg",
-                         "version":  "alpha",
-                         "description":  "The ROMs-util Standalone Package Engine",
-                         "author":  "rrkroms",
-                         "filename":  "rmspkg-alpha.rms",
-                         "sha256":  "B44D4F80E2CB5982DDDEC461E916CC06E59B647D314E4D7F4FCC226F9EA5F91A",
-                         "size":  10061,
-                         "priority":  100,
-                         "downloadUrl":  "https://github.com/ROMs-util/rmspkg/releases/download/latest/rmspkg-alpha.rms",
-                         "architecture":  "all",
-                         "dependencies":  {
-                                              "packages":  [
-
-                                                           ]
-                                          }
-                     }
-                 ]
+{
+  "repo": {
+    "schemaVersion": "1.1.1",
+    "maintainer": "Maintainer",
+    "url_template": "",
+    "id": "official",
+    "name": "ROMs Official Registry",
+    "lastUpdated": "2026-06-06T22:39:57Z",
+    "channel": "testnet"
+  },
+  "packages": [
+    {
+      "name": "helper",
+      "version": "1.2.0-beta",
+      "description": "Synthetic helper for version testing (v1.2.0-beta)",
+      "author": "ROMs-util Lab",
+      "filename": "helper-1.2.0-beta.rms",
+      "sha256": "14E96C2FD82C42CBD9E46D1622EF04B1EBA488D393E30DE336090EBC04F09224",
+      "size": 594,
+      "priority": 100,
+      "downloadUrl": "https://github.com/ROMs-util/roms-testnet/releases/download/latest/helper-1.2.0-beta.rms",
+      "architecture": "all",
+      "dependencies": null
+    },
+    {
+      "name": "helper",
+      "version": "1.2.0-rc.1",
+      "description": "Synthetic helper for version testing (v1.2.0-rc.1 - Pre-release Precedence)",
+      "author": "ROMs-util Lab",
+      "filename": "helper-1.2.0-rc.1.rms",
+      "sha256": "8E2F68C41ECB330A1610F16515E4D0AAD9390EF9F475210BBC652C3FA5AEFED1",
+      "size": 620,
+      "priority": 100,
+      "downloadUrl": "https://github.com/ROMs-util/roms-testnet/releases/download/latest/helper-1.2.0-rc.1.rms",
+      "architecture": "all",
+      "dependencies": null
+    },
+    {
+      "name": "autofirewall",
+      "version": "0.1.0-alpha",
+      "description": "Automates Windows Firewall policy creation by scanning a directory for .exe files and blocking their network access.",
+      "author": "rrkroms",
+      "filename": "autofirewall-v0.1.0-alpha.rms",
+      "sha256": "9C8C28DF2944DFB6E532B77116A3B509F3F2A2CB6320B5A67DBEDEA85084950A",
+      "size": 4598,
+      "priority": 100,
+      "downloadUrl": "https://github.com/rrkroms/autofirewall/releases/download/v0.1.0-alpha/autofirewall-v0.1.0-alpha.rms",
+      "architecture": "all",
+      "dependencies": {
+        "system": {
+          "os": "Windows 10 / 11",
+          "powershell": "5.1",
+          "privileges": "Administrator"
+        }
+      }
+    },
+    {
+      "name": "roms",
+      "version": "0.9.0-alpha",
+      "description": "The ROMs-util High-level Package Manager",
+      "author": "rrkroms",
+      "filename": "roms-v0.9.0-alpha.rms",
+      "sha256": "92D239B83965F28C6C088E3B05727187F2F961343DBB3EDE6F0E6D5602E7F8AB",
+      "size": 24040,
+      "priority": 100,
+      "downloadUrl": "https://github.com/ROMs-util/roms/releases/download/v0.9.0-alpha/roms-v0.9.0-alpha.rms",
+      "architecture": "all",
+      "dependencies": {
+        "packages": [
+          "rmspkg:0.1.0-alpha"
+        ]
+      }
+    },
+    {
+      "name": "rmspkg",
+      "version": "0.1.0-alpha",
+      "description": "The ROMs-util Standalone Package Engine",
+      "author": "rrkroms",
+      "filename": "rmspkg-v0.1.0-alpha.rms",
+      "sha256": "C25EF1E3332ABD3452110245EF1C63B991EC215BCB4180CF812543DD0FF345D3",
+      "size": 14199,
+      "priority": 100,
+      "downloadUrl": "https://github.com/ROMs-util/rmspkg/releases/download/v0.1.0-alpha/rmspkg-v0.1.0-alpha.rms",
+      "architecture": "all",
+      "dependencies": {
+        "packages": [
+          "roms:0.9.0-alpha"
+        ]
+      }
+    },
+    {
+      "name": "rmspkg",
+      "version": "alpha",
+      "description": "The ROMs-util Standalone Package Engine",
+      "author": "rrkroms",
+      "filename": "rmspkg-alpha.rms",
+      "sha256": "B44D4F80E2CB5982DDDEC461E916CC06E59B647D314E4D7F4FCC226F9EA5F91A",
+      "size": 10061,
+      "priority": 100,
+      "downloadUrl": "https://github.com/ROMs-util/rmspkg/releases/download/latest/rmspkg-alpha.rms",
+      "architecture": "all",
+      "dependencies": {
+        "packages": []
+      }
+    }
+  ]
 }
