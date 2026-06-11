@@ -1,12 +1,12 @@
 {
   "repo": {
-    "url_template": "",
-    "channel": "mainnet",
-    "schemaVersion": "1.1.1",
     "name": "ROMs Official Registry",
+    "url_template": "",
     "id": "official",
-    "lastUpdated": "2026-06-06T22:47:13Z",
-    "maintainer": "Maintainer"
+    "lastUpdated": "2026-06-11T20:41:38Z",
+    "schemaVersion": "1.1.1",
+    "maintainer": "Maintainer",
+    "channel": "mainnet"
   },
   "packages": [
     {
