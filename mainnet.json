@@ -1,12 +1,12 @@
 {
   "repo": {
-    "name": "ROMs Official Registry",
-    "id": "official",
     "channel": "mainnet",
-    "maintainer": "Maintainer",
-    "url_template": "",
     "schemaVersion": "1.1.1",
-    "lastUpdated": "2026-07-03T01:39:45Z"
+    "name": "ROMs Official Registry",
+    "url_template": "",
+    "id": "official",
+    "lastUpdated": "2026-07-06T00:00:37Z",
+    "maintainer": "Maintainer"
   },
   "packages": [
     {
@@ -222,8 +222,8 @@
       "description": "Lab: Provider 1 for 'lab-pivot' (Tests Alternatives & Auto-Pivot)",
       "author": "ROMs-util Lab",
       "filename": "pivot-v1-1.0.0.rms",
-      "sha256": "5AA99FF8F1EF99F6CAF050AF17BFC3788EF693F3D5149E4DF5B13101E7DC4D5E",
-      "size": 509,
+      "sha256": "0E673FB251951C9435C2E9690AA9635B6A005C1A0B79D6494217C5421512105A",
+      "size": 652,
       "priority": 100,
       "downloadUrl": "https://github.com/ROMs-util/roms-testnet/releases/download/latest/pivot-v1-1.0.0.rms",
       "architecture": "all",
@@ -235,8 +235,8 @@
       "description": "Lab: Provider 2 for 'lab-pivot' (Tests Alternatives & Manual Select)",
       "author": "ROMs-util Lab",
       "filename": "pivot-v2-1.0.0.rms",
-      "sha256": "7E9B21E8FDB45BE4B9883247E81E5A038171A839EA4C2C903F13C8AE1206FB80",
-      "size": 512,
+      "sha256": "CD4333226721C67B72784D994984CCD3A8E733F5CC8FF67BF53518DD21928A90",
+      "size": 655,
       "priority": 100,
       "downloadUrl": "https://github.com/ROMs-util/roms-testnet/releases/download/latest/pivot-v2-1.0.0.rms",
       "architecture": "all",
